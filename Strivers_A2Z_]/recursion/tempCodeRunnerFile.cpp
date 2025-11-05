@@ -1,0 +1,1 @@
+cout << "Printing 1 to 5 vertically:" << endl;
