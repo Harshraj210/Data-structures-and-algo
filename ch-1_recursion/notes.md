@@ -24,3 +24,9 @@ int main() {
 Stack Overflow -> f you forget the base case (the stopping condition), the function will call itself forever.
 
 When the program tries to push one more function onto the full stack, it crashes. This crash is called a Stack Overflow.
+
+
+
+
+time complexicity --> The general formula is:
+Time Complexity = (Total Number of Recursive Calls) (Time Complexity of Work in Each Call)
