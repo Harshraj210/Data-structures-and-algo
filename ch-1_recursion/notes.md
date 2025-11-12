@@ -1,4 +1,5 @@
-. A recursive function is a function that calls itself to solve a problem.
+## 🧠 Recursion Notes
+ A recursive function is a function that calls itself to solve a problem.
 
 #include <iostream>
 
@@ -32,9 +33,13 @@ time complexicity --> The general formula is:
 Time Complexity = (Total Number of Recursive Calls) (Time Complexity of Work in Each Call)
 
 
-types of recursion --> 
-            Tail Recursion
-            Head Recursion
-            Tree Recursion
-            Indirect Recursion
-            Nested Recursion
+🌳 Types of Recursion
+Tail Recursion
+
+Head Recursion
+
+Tree Recursion
+
+Indirect Recursion
+
+Nested Recursion
