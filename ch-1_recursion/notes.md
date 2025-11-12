@@ -1,6 +1,7 @@
 ## 🧠 Recursion Notes
- A recursive function is a function that calls itself to solve a problem.
+ ##  A recursive function is a function that calls itself to solve a problem.
 
+```cpp
 #include <iostream>
 
 // 'n!' is n * (n-1)!
@@ -20,7 +21,7 @@ int factorial(int n) {
 int main() {
     std::cout << factorial(4) << std::endl; // Prints 24
     return 0;
-}
+} 
 
 Stack Overflow -> f you forget the base case (the stopping condition), the function will call itself forever.
 
