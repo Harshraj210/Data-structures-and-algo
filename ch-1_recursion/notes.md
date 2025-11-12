@@ -30,3 +30,11 @@ When the program tries to push one more function onto the full stack, it crashes
 
 time complexicity --> The general formula is:
 Time Complexity = (Total Number of Recursive Calls) (Time Complexity of Work in Each Call)
+
+
+types of recursion --> 
+            Tail Recursion
+            Head Recursion
+            Tree Recursion
+            Indirect Recursion
+            Nested Recursion
