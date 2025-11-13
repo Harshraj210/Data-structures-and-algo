@@ -44,3 +44,30 @@ When the program tries to push one more function onto the full stack, it crashes
     Indirect Recursion
 
     Nested Recursion
+
+
+    ##Head Recursion 
+        Head recursion is a type of recursion where the recursive call is the first (or one of the first) operations in the function.
+
+        ```cpp
+        #include <iostream>
+
+void printOneToN(int n) {
+    // Base Case
+    if (n == 0) {
+        return;
+    }
+    
+    // 1. Recursive Call (at the "head")
+    // The function calls itself FIRST.
+    printOneToN(n - 1); 
+    
+    // 2. Work (is done AFTER the call returns)
+    // This line "waits" until the call above is finished.
+    std::cout << n << " "; 
+}
+
+int main() {
+    printOneToN(3); // Output: 1 2 3
+    return 0;
+}
