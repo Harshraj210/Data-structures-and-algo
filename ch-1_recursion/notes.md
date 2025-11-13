@@ -72,3 +72,29 @@ int main() {
     return 0;
 }
 
+#Tree #Recursion
+  --> fnction whic calls itself more than one time 
+   
+   ```cpp 
+   #include <iostream>
+using namespace std;
+
+void pritnTon(int n)
+{
+  if (n > 0)
+  {
+
+    cout << n << " ";
+    pritnTon(n - 1);
+    pritnTon(n - 1);
+  }
+}
+int main()
+{
+
+  int m = 5;
+  pritnTon(m);
+  cout << endl;
+  return 0;
+}
+
