@@ -18,7 +18,7 @@ int nCr(int n, int r)
   return num / den;
 }
 int main()
-{
-
+{ 
+  cout<<nCr(5,2);
   return 0;
 }
