@@ -17,8 +17,18 @@ int nCr(int n, int r)
   den = fact(r) * fact(n - r);
   return num / den;
 }
-int main()
+// PASCAL TRIANGLE
+int NCR(int n, int r)
 { 
-  cout<<nCr(5,2);
+    if (r > n) return 0;
+  if (n == r || r == 0)
+  {
+    return 1;
+  }
+  return NCR(n - 1, r - 1) + NCR(n - 1, r);
+}
+int main()
+{
+  cout << NCR(4, 2);
   return 0;
 }
