@@ -18,12 +18,12 @@ int fibo(int n){
         return n;
     }
     
-    // 2. The Check: Have we solved this already?
+
     if(F[n] != -1) {
         return F[n]; // Return the saved answer immediately
     }
 
-    // 3. Calculate and SAVE the result
+    // Calculate and SAVE the result
     // Instead of just returning, we store it in F[n] first
     F[n] = fibo(n-2) + fibo(n-1);
     
