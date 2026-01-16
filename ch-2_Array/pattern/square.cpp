@@ -31,7 +31,7 @@ int main()
   int n = 5;
   // printsquare(n);
   rightinvertedtrinagle(5);
-  leftinvertedtriangle();
+ 
 
   return 0;
 }
