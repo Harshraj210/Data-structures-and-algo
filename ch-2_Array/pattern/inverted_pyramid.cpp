@@ -1,17 +1,22 @@
 #include <iostream>
 using namespace std;
-void solid_pyramid(int n){
-  for (int i =n;i>=1;i--){
-    for (int j=1;j<=(n-i);j++){
-      cout<<"  ";
+void inverted_solid_pyramid(int n)
+{
+  for (int i = n; i >= 1; i--)
+  {
+    for (int j = 1; j <= (n - i); j++)
+    {
+      cout << "  ";
     }
-    for (int j=1;j<=(2*i-1);j++){
-      cout<<"* ";
+    for (int j = 1; j <= (2 * i - 1); j++)
+    {
+      cout << "* ";
     }
-    cout<<endl;
+    cout << endl;
   }
 }
-int main (){
-  solid_pyramid(5);
+int main()
+{
+  inverted_solid_pyramid(5);
   return 0;
 }
