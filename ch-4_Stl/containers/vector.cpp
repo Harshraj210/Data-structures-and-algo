@@ -17,7 +17,7 @@ int main() {
     marks.push_back(40);
     // marks.clear();
 
-    marks.insert(marks.begin(),50);
+    marks.insert(marks.begin(), 50);
     // insert()--> is used to add elements into a container at a specific position.
     // begin-->iterator pointing to the first element of a container.
 
@@ -25,6 +25,6 @@ int main() {
     // pop_back--> removes ele from
     marks.pop_back();
     cout << "SIze : " << marks.size() << endl;
-    cout << marks.at(1) << endl;
+    cout << marks.at(0) << endl;
     return 0;
 }
