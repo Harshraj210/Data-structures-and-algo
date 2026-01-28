@@ -12,5 +12,11 @@ int main() {
     // Create an iterator it that points to the first element of vector first
     // iterator works like a pointer
     vector<int>::iterator it = first.begin();
+
+    // traversing
+    while (it != first.end()) {
+        cout << *it << " ";
+        it++;
+    }
     return 0;
 }
