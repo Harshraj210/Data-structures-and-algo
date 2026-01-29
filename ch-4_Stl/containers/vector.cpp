@@ -22,7 +22,7 @@ int main() {
     // begin-->iterator pointing to the first element of a container.
 
     cout << "SIze : " << marks.size() << endl;
-    // pop_back--> removes ele from
+    // pop_back--> removes ele from ARRAY
     marks.pop_back();
     cout << "SIze : " << marks.size() << endl;
     cout << marks.at(0) << endl;
