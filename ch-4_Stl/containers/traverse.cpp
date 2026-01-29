@@ -15,6 +15,7 @@ int main() {
 
     // traversing
     while (it != first.end()) {
+        // increment 
         cout << *it << " ";
         it++;
     }
