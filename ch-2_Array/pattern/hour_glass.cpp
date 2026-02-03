@@ -16,6 +16,7 @@ void hourglass(int n){
     for(int j=1;j<=n-i;j++){
       cout<<" ";
     }
+    // for stars
     for(int j=1;j<=2*n;j++){
       cout<<"* ";
     }
