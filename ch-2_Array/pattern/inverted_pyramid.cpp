@@ -2,6 +2,7 @@
 using namespace std;
 void inverted_solid_pyramid(int n)
 {
+  // decrement 
   for (int i = n; i >= 1; i--)
   {
     for (int j = 1; j <= (n - i); j++)
