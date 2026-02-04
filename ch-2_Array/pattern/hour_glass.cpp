@@ -2,7 +2,7 @@
 using namespace std;
 void hourglass(int n){
   for(int i=1;i<=n;i++){
-    // for spaces
+    // for spaces 
     for(int j=1;j<=i-1;j++){
       cout<<" ";
     }
