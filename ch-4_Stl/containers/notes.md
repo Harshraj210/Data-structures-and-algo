@@ -281,6 +281,139 @@ for(int x : mylist) {
 
 ---
 
+## 9️⃣ Queue (FIFO – First In First Out)
+
+### What is `queue`?
+
+`queue` is a **container adapter** in STL that follows the **FIFO (First In, First Out)** principle.
+
+> Jo pehle aayega, wahi pehle jaayega.
+
+* No random access
+* No iterators
+* Restricted access (only front & back)
+
+---
+
+### Header File
+
+```cpp
+#include <queue>
+```
+
+---
+
+### Creating a Queue
+
+```cpp
+queue<int> q;
+```
+
+---
+
+### Inserting Elements
+
+```cpp
+q.push(10);
+q.push(20);
+q.push(30);
+```
+
+Queue state:
+
+```
+Front → 10  20  30 ← Rear
+```
+
+---
+
+### Accessing Elements
+
+```cpp
+q.front();   // first element
+q.back();    // last element
+```
+
+---
+
+### Removing Element
+
+```cpp
+q.pop();   // removes front element
+```
+
+---
+
+### Swapping Two Queues
+
+```cpp
+queue<int> q, s;
+q.push(10);
+q.push(20);
+
+s.push(200);
+s.push(300);
+
+q.swap(s);
+```
+
+After swap:
+
+* `q` → 200, 300
+* `s` → 10, 20
+
+---
+
+### Traversing a Queue (IMPORTANT)
+
+❌ Queue does **NOT support iterators or loops directly**.
+
+✅ Traversal is done using `front()` and `pop()`.
+
+```cpp
+queue<int> temp = q;
+while(!temp.empty()) {
+    cout << temp.front() << " ";
+    temp.pop();
+}
+```
+
+> A **temporary queue** is used to avoid destroying the original queue.
+
+---
+
+### Important Queue Functions
+
+| Function | Description        |
+| -------- | ------------------ |
+| push(x)  | Insert element     |
+| pop()    | Remove front       |
+| front()  | Access front       |
+| back()   | Access last        |
+| empty()  | Check empty        |
+| size()   | Number of elements |
+
+---
+
+### Time Complexity (Queue)
+
+| Operation  | Complexity |
+| ---------- | ---------- |
+| push       | O(1)       |
+| pop        | O(1)       |
+| front/back | O(1)       |
+
+---
+
+### Short Exam Notes (Queue)
+
+* Queue follows FIFO
+* Only front element can be removed
+* No indexing, no iterators
+* Traversed using front + pop
+
+---
+
 ## ✅ Final Summary
 
 ✔ STL containers store data efficiently
@@ -291,6 +424,4 @@ for(int x : mylist) {
 
 ---
 
-📌 **Tip for Exams:**
 
-> Always mention **time complexity + use case** for each container.
