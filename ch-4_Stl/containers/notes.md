@@ -366,7 +366,7 @@ After swap:
 
 ### Traversing a Queue (IMPORTANT)
 
-❌ Queue does **NOT support iterators or loops directly**.
+ Queue does **NOT support iterators or loops directly**.
 
 ✅ Traversal is done using `front()` and `pop()`.
 
@@ -405,22 +405,11 @@ while(!temp.empty()) {
 
 ---
 
-### Short Exam Notes (Queue)
 
-* Queue follows FIFO
-* Only front element can be removed
-* No indexing, no iterators
-* Traversed using front + pop
 
 ---
 
-## ✅ Final Summary
 
-✔ STL containers store data efficiently
-✔ `vector` is best for fast access
-✔ `list` is best for frequent insert/delete
-✔ Iterators help traverse containers
-✔ 2D vectors are used in matrices, graphs, DP
 
 ---
 
