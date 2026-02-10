@@ -8,17 +8,35 @@ using namespace std;
 void doubleValue(int a) {
     cout << 2 * a << " ";
 }
+bool iseven (int a){
+  return a%2==0;
+}
 int main() {
     vector<int> arr(5);
     arr[0] = 10;
-    arr[1] = 20;
-    arr[2] = 30;
-    arr[3] = 40;
+    arr[1] = 50;
+    arr[2] = 60;
+    arr[3] = 5;
     // no ned of writing complex forloop
     // for_each(arr.begin(), arr.end(), doubleValue);
 
     int target = 10;
-    auto it = find(arr.begin(), arr.end(), target);
-    cout << *it << " ";
+    // vector<int>::iterator it = find(arr.begin(), arr.end(), target);
+    // Ugly and hard to read
+
+    // auto it = find(arr.begin(), arr.end(), target);
+    // cout << *it << " ";
+
+    // auto it = find_if(arr.begin(), arr.end(), iseven);
+    // // it gives only the first value in array
+    // cout<<*it<<" ";
+
+
+    sort(arr.begin(),arr.end());
+    for(int a: arr){
+      cout<<a<<" ";
+    }
+
+
     return 0;
 }
