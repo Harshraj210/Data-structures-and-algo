@@ -32,8 +32,20 @@ int main() {
     // cout<<*it<<" ";
 
 
-    sort(arr.begin(),arr.end());
-    for(int a: arr){
+    // sort(arr.begin(),arr.end());
+    // for(int a: arr){
+    //   cout<<a<<" ";
+    // }
+
+    
+    // rotate(arr.begin(),arr.begin()+3,arr.end());
+    //  for(int a: arr){
+    //    cout<<a<<" ";
+    //  }
+
+    auto it = partition(arr.begin(),arr.end(),iseven);
+    // it aprts even and odd no. as functioon is evem defined
+    for (int a:arr){
       cout<<a<<" ";
     }
 
