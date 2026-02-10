@@ -1,16 +1,19 @@
-#include <iostream>
-
 #include <algorithm>
+#include <iostream>
 #include <vector>
 using namespace std;
-int main (){
-   vector<int> first;
+int main() {
+    vector<int> first;
     first.push_back(1);
-    first.push_back(2);
+    first.push_back(4);
     first.push_back(3);
-    make_heap(first.begin(),first.end());
-    for(int a:first){
-      cout<<a<<" ";
+    // heap only gives first [0] to largest element . it doent mean sorting
+    make_heap(first.begin(), first.end());
+    first.push_back(99);
+    push_heap(first.begin(), first.end());
+    for (int a : first) {
+        cout << a << " ";
     }
+    // sort heap
     return 0;
 }
