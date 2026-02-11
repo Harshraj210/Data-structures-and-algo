@@ -10,9 +10,15 @@ int main() {
 
     vector<int> second;
     second.push_back(1);
-    second.push_back(4);
-    second.push_back(3);
+    second.push_back(9);
+    second.push_back(5);
+    vector<int> result;
     // set union --> sb ko likh do
-    
-
+    // set_union(first.begin(), first.end(), second.begin(), second.end(), inserter(result, result.begin()));
+    // set_intersection(first.begin(), first.end(), second.begin(), second.end(), inserter(result, result.begin()));
+    set_difference(first.begin(), first.end(), second.begin(), second.end(), inserter(result, result.begin()));
+    for (int a : result) {
+        cout << a << " ";
+    }
+    return 0;
 }
