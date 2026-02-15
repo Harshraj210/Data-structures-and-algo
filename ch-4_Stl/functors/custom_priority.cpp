@@ -24,6 +24,8 @@ public:
 };
 
 class comparator {
+    // public class
+    
 public:
 // operator overload 
     bool operator()(student a, student b) {
