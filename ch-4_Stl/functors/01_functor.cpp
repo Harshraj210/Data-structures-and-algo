@@ -2,6 +2,7 @@
 using namespace std;
 
 class functorone{
+  // public class
   public:
         bool operator()(int a,int b){
           return a>b;
