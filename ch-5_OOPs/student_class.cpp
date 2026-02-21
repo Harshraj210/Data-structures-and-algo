@@ -40,7 +40,16 @@ public:
     }
 };
 int main() {
-    Studennt s1(99, 5, "harsh", 1);
-    s1.study();
+    // Studennt s1(99, 5, "harsh", 1);
+    // s1.study();
+    // Studennt s2=s1;
+    // cout<<s2.name<<endl;
+
+    // DMA
+    Studennt *s3= new Studennt(99, 5, "aman", 1);
+    cout<<s3->name<<endl;
+    s3->study();
+    delete s3;
+
     return 0;
 }
