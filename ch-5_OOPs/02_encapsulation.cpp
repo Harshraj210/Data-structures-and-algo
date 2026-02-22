@@ -9,8 +9,18 @@ public:
     int nos;
     string name;
     int id;
-  private:
-    int *cgp;
+    Studennt(int marks, int nos, string name, int id, float cgp, string gf) {
+        cout << "Ctor" << endl;
+        this->marks = marks;
+        this->nos = nos;
+        this->name = name;
+        this->id = id;
+        this->cgp = cgp;
+        this->gf = gf;
+    }
+
+private:
+    float cgp;
     string gf;
     void study() {
         cout << "study" << endl;
@@ -23,4 +33,9 @@ public:
     // function that cleans object when destroyed.
     ~Studennt() {
         cout << "Detor" << endl;
+    }
+
+private:
+    void gf_chat() {
+        cout << this->name << "gf cxhat" << endl;
     }
