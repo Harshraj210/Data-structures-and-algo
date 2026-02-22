@@ -38,7 +38,7 @@ public:
         this->cgp = a;
     }
     //  
-    //  const is used --> function will NOT modify the object
+    //  const is used --> function will NOT modify the object 
     float getcgp() const {
         return this->cgp;
     }
@@ -64,3 +64,5 @@ int main() {
 
     A.sleep();
 }
+// Getter = function that reads (gets) private data
+// Setter = function that changes (sets) private data
