@@ -1,14 +1,16 @@
 #include <iostream>
+#include <string>
 using namespace std;
-// Encapsulation is data hiding using private members and controlled access through public methods
+
+// Encapsulation: private data + public methods
 class Studennt {
-    // public main me acees
+
 public:
-    // attributes
     int marks;
     int nos;
     string name;
     int id;
+
     Studennt(int marks, int nos, string name, int id, float cgp, string gf) {
         cout << "Ctor" << endl;
         this->marks = marks;
@@ -22,20 +24,43 @@ public:
 private:
     float cgp;
     string gf;
+
     void study() {
         cout << "study" << endl;
     }
 
-    void sleep() {
-        cout << this->name << "sleep" << endl;
+    void gf_chat() {
+        cout << this->name << " gf chat" << endl;
     }
-    // destructor
-    // function that cleans object when destroyed.
+
+public:
+    void setcgp(float a) {
+        this->cgp = a;
+    }
+    //  
+    //  const is used --> function will NOT modify the object
+    float getcgp() const {
+        return this->cgp;
+    }
+
+    string getgf() const {
+        return this->gf;
+    }
+
+    void sleep() {
+        cout << this->name << " sleep" << endl;
+    }
+
     ~Studennt() {
         cout << "Detor" << endl;
     }
+};
 
-private:
-    void gf_chat() {
-        cout << this->name << "gf cxhat" << endl;
-    }
+int main() {
+    Studennt A(99, 5, "harsh", 1, 9.8, "hell");
+
+    cout << "CGPA: " << A.getcgp() << endl;
+    cout << "GF: " << A.getgf() << endl;
+
+    A.sleep();
+}
