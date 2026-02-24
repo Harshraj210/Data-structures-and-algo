@@ -13,7 +13,9 @@ int a = 10;
 int b = 20;
 
 int* const p = &a;
-*p = 30;   //  modify data
+// *p = 30;   //   modify data
 p = &b;    //  cannot change address
+// Const pointer to const data
+
 return 0;   //  pointer can move
 }
