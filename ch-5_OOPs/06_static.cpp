@@ -11,7 +11,7 @@ public:
 };
 
 int Counter::count = 0;
-
+// test func.
 void test() {
     static int x = 0;
     x++;
