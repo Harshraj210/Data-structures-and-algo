@@ -1,12 +1,30 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class box{
-  int getwidth()const{
-    return width;
-  }
-}
+class box {
+    // ctor can be private
+    box(int _width) {
+        width = _width;
+    }
 
-int main (){
+public:
+    int width;
+    int getwidth() const {
+        return width;
+    }
+    void setwwidth(int _val) {
+        width = _val;
+    }
+    friend class box_factory;
+};
+class box_factory {
+    int count;
 
-  return 0;
+public:
+    box getabox(int _w) {
+        return box(_w);
+    }
+};
+
+int main() {
+    return 0;
 }
