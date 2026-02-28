@@ -21,10 +21,14 @@ class box_factory {
 
 public:
     box getabox(int _w) {
+        ++count;
         return box(_w);
     }
 };
 
 int main() {
+    box_factory bfact;
+    box b = bfact.getabox(5);
+    cout << b.getwidth() << endl;
     return 0;
 }
