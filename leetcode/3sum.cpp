@@ -14,7 +14,7 @@ public:
             for(int j = i+1; j < nums.size(); j++) {
                 for(int k = j+1; k < nums.size(); k++) {
                   // i<j<k
-                    // target sum 0
+                    // target sum is 0
                     if(nums[i] + nums[j] + nums[k] == 0) {
                         vector<int> t = {nums[i], nums[j], nums[k]};
                         sort(t.begin(), t.end());
