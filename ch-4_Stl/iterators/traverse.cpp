@@ -6,12 +6,13 @@
 #include <vector>
 using namespace std;
 int main() {
-    vector<int> first;
+    list<int> first;
     first.push_back(1);
     first.push_back(4);
     first.push_back(3);
     auto it = first.begin();
     // bidirectionl -->read write forwrd inc.
+    // for backward just change end with begin()
 
     while(it!=first.end()){
       *it=*it +2;

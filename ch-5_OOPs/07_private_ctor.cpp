@@ -14,6 +14,7 @@ public:
     void setwwidth(int _val) {
         width = _val;
     }
+    // friend allows another class/function to access private members
     friend class box_factory;
 };
 class box_factory {
