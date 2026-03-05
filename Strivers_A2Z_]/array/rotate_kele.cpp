@@ -8,8 +8,9 @@ void rotateArray(vector<int>& nums, int k) {
 
     int n = nums.size();
     k = k % n;
-  
+  // reverse array
     reverse(nums.begin(), nums.end());
+    // reverse kth times
     reverse(nums.begin(), nums.begin() + k);
     reverse(nums.begin() + k, nums.end());
 }
