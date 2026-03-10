@@ -30,7 +30,7 @@ vector<vector<int>> threeSum(vector<int>& nums){
                 left++;
                 right--;
             }
-
+            // traversing
             else if(sum < 0)
                 left++;
 
