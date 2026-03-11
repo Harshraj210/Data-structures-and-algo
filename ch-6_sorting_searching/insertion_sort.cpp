@@ -4,10 +4,12 @@ using namespace std;
 
 void insertion(vector<int> &v){
   int n=v.size();
+  // i=0 ignored
   for (int i = 1;i<n;i++){
     int key = v[i];
     int j = i-1;
     while(j>=0 && v[j]>key){
+      // swapping
       v[j+1]= v[j];
       j--;
 
