@@ -10,6 +10,7 @@ double findMaxAverage(vector<int>& nums, int k) {
     for(int i = 0; i < k; i++){
         windowSum += nums[i];
     }
+    // current sum
 
     int maxSum = windowSum;
 
