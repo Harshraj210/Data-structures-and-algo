@@ -32,7 +32,7 @@ int findPeakElement(vector<int>& nums) {
 
 int main() {
 
-    vector<int> nums = {1,2,3,1};
+    vector<int> nums = {1,2,3,1,3};
 
     int peakIndex = findPeakElement(nums);
 
