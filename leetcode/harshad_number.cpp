@@ -5,7 +5,7 @@ int sumOfTheDigitsOfHarshadNumber(int x) {
 
     int sum = 0;
     int temp = x;
-
+    // itreation
     while(temp > 0){
         sum += temp % 10;
         temp /= 10;
