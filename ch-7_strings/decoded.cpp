@@ -9,7 +9,7 @@ string decodeMessage(string message){
     for(char ch : message){
       // string to number
         int num = ch - '0';
-        
+        // number to string
         char decoded = 'a' + num - 1;
         ans.push_back(decoded);
     }
