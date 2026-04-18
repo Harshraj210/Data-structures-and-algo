@@ -28,7 +28,22 @@ bool canCook(vector<int>& ranks, int p, int time) {
 
     int maxRank = *min_element(ranks.begin(), ranks.end());
     int high = maxRank * (p * (p + 1)) / 2;
-  }
+    int ans = 0;
+
+    while(low <= high) {
+        int mid = (low + high) / 2;
+
+        if(canCook(ranks, p, mid)) {
+            ans = mid;
+            high = mid - 1;   // try smaller time
+        } else {
+            low = mid + 1;    // need more time
+        }
+    }
+
+    return ans;
+}
+  
 
 
     
