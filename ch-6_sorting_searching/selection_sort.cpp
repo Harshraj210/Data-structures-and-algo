@@ -18,7 +18,7 @@ void selectionSort(vector<int> &v){
 
         }
 
-        swap(v[i], v[minIndex]);
+        swap(v[i], v[minIndex]);                                        
     }
 }
 
