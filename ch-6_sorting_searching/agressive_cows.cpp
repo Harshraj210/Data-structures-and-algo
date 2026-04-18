@@ -20,5 +20,13 @@ bool canplace(vector<int>& stall,int k,int dist){
       return true;
     }
   }
+  return false;
+}
+int agreesivecows(vector<int>& stalls, int k){
+  sort(stalls.begin(), stalls.end());
+
+    int low = 1;
+    int high = stalls.back() - stalls.front();
+    int ans = 0;
 }
 
