@@ -28,6 +28,7 @@ int minTimeToCookPratas(int p, vector<int>& ranks) {
     int low = 0;
     // returns an iterator (pointer) to the smallest element
     int maxRank = *min_element(ranks.begin(), ranks.end());
+    // Maximum time required
     int high = maxRank * (p * (p + 1)) / 2;
     int ans = 0;
 
