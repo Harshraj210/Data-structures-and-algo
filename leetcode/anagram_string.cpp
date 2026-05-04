@@ -7,11 +7,11 @@ bool isAnagram(string s, string t) {
     if(s.size() != t.size()) return false;
 
     vector<int> freq(26, 0);
-
+  // it will return index
     for(char c : s) {
         freq[c - 'a']++;
     }
-
+    // substract
     for(char c : t) {
         freq[c - 'a']--;
     }
