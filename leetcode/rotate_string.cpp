@@ -13,6 +13,7 @@ public:
         string temp = s + s;
 
         // check if goal exists
+        // npos --> is not found and used with find()
         if(temp.find(goal) != string::npos) {
             return true;
         }
