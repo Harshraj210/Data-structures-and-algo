@@ -1,2 +1,2 @@
 // sieve of erasthothenes --> for findding thew mulprime no. and we mark the multiples of prime no. as false till it's half
-// 
+// suppose we  have to mark 4 but it is already marked bcz it is multiple of 2
