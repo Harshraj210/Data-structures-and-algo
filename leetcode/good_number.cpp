@@ -2,20 +2,17 @@
 using namespace std;
 
 class Solution {
-
 public:
-
-// 1e9--> 10^9
+    // 1e9--> 10^9
+    // also called modulo
 
     long long MOD = 1e9 + 7;
 
     long long power(long long x, long long n) {
-
         long long ans = 1;
 
-        while(n > 0) {
-
-            if(n % 2 == 1) {
+        while (n > 0) {
+            if (n % 2 == 1) {
                 ans = (ans * x) % MOD;
             }
 
@@ -28,19 +25,16 @@ public:
     }
 
     int countGoodNumbers(long long n) {
-
         long long even = (n + 1) / 2;
         long long odd = n / 2;
 
-        long long ans =
-            (power(5, even) * power(4, odd)) % MOD;
+        long long ans = (power(5, even) * power(4, odd)) % MOD;
 
         return ans;
     }
 };
 
 int main() {
-
     Solution obj;
 
     cout << obj.countGoodNumbers(4);
