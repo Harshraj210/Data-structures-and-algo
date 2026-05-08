@@ -5,6 +5,8 @@ class Solution {
 
 public:
 
+// 1e9--> 10^9
+
     long long MOD = 1e9 + 7;
 
     long long power(long long x, long long n) {
