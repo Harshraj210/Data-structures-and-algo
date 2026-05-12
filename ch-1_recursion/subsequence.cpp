@@ -24,7 +24,12 @@ public:
 
         // include
         char ch = s[index];
-        sol(s, index + 1, output + ch, ans);
+        //  
+        // sol(s, index + 1, output + ch, ans);
+        // some cases may fail wwe use
+        output.push_back(ch);
+        sol(s, index + 1, output , ans);
+        output.pop_back();
 
         // exclude
         sol(s, index + 1, output, ans);
