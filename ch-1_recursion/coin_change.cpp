@@ -16,7 +16,7 @@ public:
         if (index >= coins.size()) {
             return 0;
         }
-
+            // same coin use krne pr anmount decrerase
         int include = solve(amount - coins[index], coins, index);
 
         int exclude = solve(amount, coins, index + 1);
