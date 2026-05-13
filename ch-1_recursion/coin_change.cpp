@@ -18,7 +18,7 @@ public:
         }
             // same coin use krne pr anmount decrerase
         int include = solve(amount - coins[index], coins, index);
-
+        // exclude lkkrne pr amount same
         int exclude = solve(amount, coins, index + 1);
 
         return include + exclude;
